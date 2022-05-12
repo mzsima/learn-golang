@@ -1,4 +1,4 @@
-module github.com/mzsima/candlestick
+module github.com/mzsima/candlestick6
 
 go 1.18
 
