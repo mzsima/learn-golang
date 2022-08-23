@@ -1,4 +1,4 @@
-module quickstarts
+module quickstarts_envoy
 
 go 1.18
 
