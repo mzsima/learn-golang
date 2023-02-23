@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -52,6 +53,8 @@ func main() {
 			http.Error(w, "No id_token field in oauth2 token.", http.StatusInternalServerError)
 			return
 		}
+
+		fmt.Println(rawIDToken)
 
 		idToken, err := verifier.Verify(ctx, rawIDToken)
 		if err != nil {

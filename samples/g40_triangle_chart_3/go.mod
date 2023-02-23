@@ -1,3 +1,3 @@
-module trianglechart2
+module trianglechart3
 
 go 1.18
